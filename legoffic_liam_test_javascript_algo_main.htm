@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Test</title>
+
+        <script language="Javascript" src="Javascript_test_je1.js"></script>
+        <script language="Javascript" src="legoffic_liam_test_javascript_algo_ex1.js"></script>
+        <script language="Javascript" src="legoffic_liam_test_javascript_algo_ex2.js"></script>
+        <script language="Javascript" src="legoffic_liam_test_javascript_algo_ex3.js"></script>
+    </head>
+    <body>
+
+        <div id="table-container"></div>
+
+        <script>
+            fill_double_entry_table(array_number, to_verify);
+            display_table(to_verify);
+        </script>
+        
+        <div style="margin-top: 20px">
+            <table id="error-container" border="1"></table>
+            <p id="no-error" style="display: none;">The table is correct</p>
+        </div>
+        
+
+        <script>
+            check_lines(to_verify);
+            check_columns(to_verify);
+            check_regions(to_verify);
+            // affiche un message positif s'il n'y a pas d'erreur
+            if (document.getElementById("error-container").innerHTML === "") {
+                document.getElementById("no-error").style.display = "block";
+                document.getElementById("error-container").style.display = "none";
+            }
+        </script>
+
+    </body>
+</html>
