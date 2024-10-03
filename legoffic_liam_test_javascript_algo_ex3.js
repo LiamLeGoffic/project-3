@@ -9,6 +9,7 @@ function check_lines(to_check) {
         }
     }
 
+    // on affiche les lignes d'erreurs dans un certain élément (une table) de notre fichier html
     document.getElementById("error-container").innerHTML += error;
 }
 
@@ -25,6 +26,7 @@ function check_columns(to_check) {
         }
     }
 
+    // on affiche les lignes d'erreurs dans un certain élément (une table) de notre fichier html
     document.getElementById("error-container").innerHTML += error;
 }
 
@@ -54,5 +56,6 @@ function check_regions(to_check) {
         }
     }
 
+    // on affiche les lignes d'erreurs dans un certain élément (une table) de notre fichier html
     document.getElementById("error-container").innerHTML += error;
 }
